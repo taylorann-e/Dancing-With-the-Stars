@@ -24,6 +24,11 @@ body {
 .sub-heading_2 {
     background-color: white;
     margin: 0;
+    color: white;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #430992;
 }
 
 .nav {
