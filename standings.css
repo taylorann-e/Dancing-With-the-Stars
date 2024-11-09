@@ -62,7 +62,7 @@ body {
     margin: 30px;
 
     background-color: white;
-    max-width: 1500px;
+    max-width: 1000px;
     margin: 50px auto;
     padding: 50px 80px;
     justify-content: center;
@@ -76,6 +76,9 @@ body {
     margin-bottom: 20px;
     background-color: white;
     will-change: box-shadow;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 5px;
 }
 
 .img_card:hover {
@@ -98,7 +101,6 @@ body {
     color: white;
     background-color: var(--dark-green);
     width: 100%;
-    text-align: center;
     height: 35px;
     padding-top: 10px;
     margin: 0;
@@ -124,16 +126,19 @@ body {
 
 .img_card__names {
     color: var(--primary);
-    font-size: 1.5rem;
     margin-top: 5px;
     margin-bottom: 5px;
+    font-size: 22px;
+    font-weight: 700;
+    margin: 15px auto;
 }
 
 .img_card__score {
     color: var(--primary);
-    font-size: 1.2rem;
     margin-top: 10px;
     margin-bottom: 5px;
+    font-size: 18px;
+    color: #808285;
 }
 
 .footer {
@@ -151,6 +156,9 @@ body {
     }
     .header-container {
         flex-direction: column;
+    }
+    .img_card {
+        max-width: 300px;
     }
 }
 
