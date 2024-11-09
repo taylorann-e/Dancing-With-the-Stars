@@ -49,17 +49,22 @@
     font-size: 1.2rem;
   }
   
-  nav ul li a {
-    color: #663399;
-    text-decoration: none;
-    padding: 10px;
-  }
-  
   nav ul li:not(:last-child)::after {
     content: "|";
     position: absolute;
     right: -15px;
     color: white;
+  }
+  nav ul li a {
+    color: #663399;
+    text-decoration: none;
+    padding: 10px;
+    transition: color 0.3s ease; /* Transition added */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+    color: #444; /* Slight color change on hover for effect */
   }
   
   nav ul li a:hover {
@@ -126,6 +131,20 @@
     background-color: white;
     text-align: center;
   }
+  .content-item__text {
+    font-size: 1rem;
+    line-height: 1.6;
+    background-color: #663399;
+    color: white;
+    text-align: center;
+    padding: auto;
+    animation: fadeIn 1s ease; /* Animation added */
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
   
   /* Responsive Adjustments */
   @media (max-width: 768px) {
@@ -140,5 +159,16 @@
     background-color: #663399;
     color: white;
     margin-top: 40px;
+  }
+  @media (max-width: 480px) {
+    header {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    nav ul {
+      flex-direction: column;
+      gap: 10px;
+    }
   }
   
