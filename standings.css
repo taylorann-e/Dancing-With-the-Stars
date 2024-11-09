@@ -6,6 +6,11 @@
     --dark-green: hsl(108, 20%, 50%);
 }
 
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .header-container {
     display: flex;
     align-items: center;
@@ -55,7 +60,7 @@
     border-radius: 10px;
     justify-items: center;
     margin-bottom: 20px;
-    /* background-color: #d8e3d5; */
+    background-color: white;
     will-change: box-shadow;
 }
 
