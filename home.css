@@ -1,0 +1,133 @@
+body {
+  background-image: url(Images/sam-farallon-2e6HKgBdfmc-unsplash.jpg);
+  background-size: cover;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.3rem;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #070A2D;
+  padding: 48px 0;
+}
+
+.main__section {
+  height: 480px;
+  background-image: url(Images/Cover-photo.jpg);
+  background-size: cover;
+  background-position: top;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+}
+
+.main__sectionDancing {
+  color: white;
+  font-size: 60px;
+  font-weight: 700;
+  text-shadow: #4a475a 0px 0px 8px;
+  margin-bottom: 15px;
+  padding: 0 20px;
+}
+
+.main__section__text {
+  color: white;
+  text-shadow: #070A2D 0px 0px 6px;
+  padding: 0 20px;
+}
+
+.main__section__button {
+  font-size: 15px;
+  font-weight: 600;
+  background-color: #430992;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: transform 200ms;
+}
+
+.main__section__button:hover {
+transform: translateY(-2px);
+}
+
+.main__section__link {
+  text-decoration: none;
+  color: white;
+}
+
+.main__container {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: white;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 50px 80px;
+  justify-content: center;
+}
+
+.main__container__title {
+  color: #430992;
+  width: 100%;
+  text-align: center;
+}
+
+.img_card {
+  width: 200px;
+  background-color: white;
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
+  margin: 20px;
+  text-align: center;
+}
+
+.img_card__name, .img_card__description {
+  padding: 0 15px;
+}
+
+.img_card__name {
+  font-size: 22px;
+  font-weight: 700;
+  margin: 15px auto;
+}
+
+.img_card__description {
+  font-size: 18px;
+  color: #808285
+}
+
+.img_card__rank {
+  margin: 10px auto -10px auto;
+  font-weight: 700;
+  color: #808285;
+}
+
+footer {
+  height: 120px;
+  color: white;
+  background-color: #070A2D;
+  text-align: center;
+  align-content: center;
+}
+
+@media screen and (max-width: 600px) {
+  .main__section {
+    height: 400px;
+  }
+
+  .main__sectionDancing {
+    font-size: 40px;
+  }
+
+  .main__container {
+    padding: 30px 60px;
+    margin: 20px auto
+  }
+}
