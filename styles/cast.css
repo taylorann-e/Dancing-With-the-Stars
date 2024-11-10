@@ -1,45 +1,85 @@
-body {
-    background-color:#ECEBEC ;
-    color:#070A2D;
-    font-family: arial;
-
-}
-
-.logo_nav {
-    width:210px; 
-    height:90px; 
-    background-color: #430992;
-}
-
-.nav {
-    background-color: #430992;
-    border-bottom: #070A2D;
-}
-
-.nav_container {
-    background-color: #ECEBEC;
-}
+.header {
+    background-color: #070A2D;
+    padding: 20px 0;
+  }
+  
+  .header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+   
+  }
+  
+  .header__nav__list {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+  }
+  
+  .header__nav__list li {
+    padding: 0 20px;
+    align-content: center;
+  }
+  
+  .header__nav__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    position: relative;
+  }
+   
+  .header__nav__link::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    background-color: white;
+    animation-fill-mode: backwards;
+  }
+  
+  .header__nav__link:hover::after {
+    animation: underline 0.5s forwards;
+  }
+  
+  @keyframes underline {
+    0% {width:0%}
+    100% {width:100%}
+  }
+  
+  .header__nav__logo {
+    margin-right: auto;
+  }
+  /* Header ends */
+  
+  
+  .header_container {
+      display:grid;
+      grid-template-columns: auto auto;
+      justify-items: center;
+      vertical-align: middle;
+      padding-top: 2%;
+  }
+  
+  body {
+      background-color:#ECEBEC ;
+      color:#070A2D;
+      font-family: arial;
+    background-image : url('https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQQ2GRfohmrAaZIZHcfuDWc0NIc0CuDi1jffGr8kUul3AZRs-w--xIXorU&s.png');
+  }
+  
+  .header_video {
+      background-color:#430992;
+      color:#ECEBEC; 
+      
+  }
 
 .video_w_h { 
     width:750px; 
     height:515px;
-}
-
-div > a {
-  float: right;
-  margin-right: 5%;
-  line-height: 90px;
-}
-
-.text_link {
-    color:#430992;
-    font-size: 25px;
-    text-decoration: none;
-}
-.header {
-    background-color:#430992;
-    color:#ECEBEC;
-    border-bottom: #FFC2CC 20px solid;
 }
 
 .header_container {
@@ -129,40 +169,50 @@ div > img {
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
 }
 
-.logo_footer {
-    background-color: #430992;
-    border-bottom: #FFC2CC 20px solid;
-}
 
 .logo_img {
     align-items: center;
 }
 
-@media screen and (max-width:1000px) {
+footer {
+    height: 80px;
+    color: white;
+    background-color: #070A2D;
+    text-align: center;
+    align-content: center;
+  }
+
+@media screen and (max-width:600px) {
     .logo_nav {
         width:210px; 
         height:90px; 
         background-color: #430992;
     }
+
+    .header__nav {
+        flex-direction: column;
+      }
+    
+      .header__nav__list {
+        padding: 0;
+        margin: 10px auto;
+      }
+    
+      .header__nav__logo {
+        margin: 0 auto;
+      }
+
+
+
     .video_w_h { 
-        width:350px; 
-        height:250px;
+        width:550px; 
+        height:450px;
         padding-bottom: 5%;
     }
     
-    div > a {
-      float: none;
-      margin-right: 5%;
-    }
-    
-    .text_link {
-        color:#430992;
-        font-size: 25px;
-        text-decoration: none;
-    }
     
     .text_header {
-        font-size: 30px;
+        font-size: 35px;
         text-transform: uppercase;
        
     }
@@ -184,7 +234,7 @@ div > img {
     }
 
     .text_h2_Stars {
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         color: #430992;
     }
@@ -195,7 +245,7 @@ div > img {
         justify-items: center;
     }
     .text_h2_Pros {
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         color: #430992;
     }
@@ -208,7 +258,7 @@ div > img {
     .text_Judges {
         text-align: center;
         padding-bottom: 20%;
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         color: #430992;
     }
@@ -223,27 +273,22 @@ div > img {
         text-align: center;
         padding-bottom: 20%;
         padding-top: 5%;
-        font-size: 20px;
+        font-size: 30px;
         text-transform: uppercase;
         color: #430992;
     }
 
     h3 { 
         text-align: center;
-        font-size: 15px;
+        font-size: 20px;
     }
     
     
     div > img {
-        width:250px;
-        height:250px;
+        width:350px;
+        height:350px;
         border-radius: 5px;
         box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-    }
-    
-    .logo_footer {
-        background-color: #430992;
-        border-bottom: #FFC2CC 20px solid;
     }
     
     .logo_img {
