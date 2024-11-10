@@ -69,7 +69,7 @@
 
 .main__section {
   height: 480px;
-  background-image: url(Images/Cover-photo.jpg);
+  background-image: url("../images/Cover-photo.jpg");
   background-size: cover;
   background-position: top;
   display: flex;
