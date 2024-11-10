@@ -69,3 +69,18 @@ footer {
     align-content: center;
     font-size: 1.3rem;
 }
+
+@media screen and (max-width: 600px) {
+    .header__nav {
+        flex-direction: column;
+    }
+
+    .header__nav__list {
+        padding: 0;
+        margin: 10px auto;
+    }
+
+    .header__nav__logo {
+        margin: 0 auto;
+    }
+}
