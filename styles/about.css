@@ -16,7 +16,7 @@ body {
 }
 
 /* Header */
-header {
+/* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -70,7 +70,7 @@ nav ul li a:hover {
 
 nav ul li a:hover {
     text-decoration: underline;
-}
+} */
 
 /* Main Content */
 .main {
@@ -158,13 +158,13 @@ h2 {
     }
 }
 /* Footer */
-footer {
+/* footer {
     text-align: center;
     padding: 10px 0;
     background-color: #430992;
     color: white;
     margin-top: 40px;
-}
+} */
 @media (max-width: 480px) {
     header {
         flex-direction: column;
