@@ -15,62 +15,62 @@
     line-height: 1.6;
   }
   
-  /* Header */
-  header {
+/* Header starts */
+.header {
+    background-color: #070A2D;
+    padding: 20px 0;
+  }
+  
+  .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: white;
+    max-width: 1000px;
+    margin: 0 auto;
   }
   
-  header h1 {
-    background-color: #430992;
-    color: white;
-    padding: 10px;
-    font-size: 2.5rem;
-    width: 300px;
-    height: 150px;
-    text-align: center;
-    line-height: 1.2;
+  .header__nav__list {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: Arial, sans-serif;
-  }
-  
-  nav ul {
+    justify-content: flex-end;
     list-style: none;
-    display: flex;
-    gap: 20px;
   }
   
-  nav ul li {
-    position: relative;
-    font-size: 1.2rem;
+  .header__nav__list li {
+    padding: 0 20px;
+    align-content: center;
   }
   
-  nav ul li:not(:last-child)::after {
-    content: "|";
-    position: absolute;
-    right: -15px;
-    color: white;
-  }
-  nav ul li a {
-    color: #430992;
+  .header__nav__link {
     text-decoration: none;
-    padding: 10px;
-    transition: color 0.3s ease; /* Transition added */
+    color: white;
+    font-size: 18px;
+    position: relative;
+  }
+   
+  .header__nav__link::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    left: 0;
+    bottom: -3px;
+    width: 0;
+    background-color: white;
+    animation-fill-mode: backwards;
   }
   
-  nav ul li a:hover {
-    text-decoration: underline;
-    color: #CC30D9; /* Slight color change on hover for effect */
+  .header__nav__link:hover::after {
+    animation: underline 0.5s forwards;
   }
   
-  nav ul li a:hover {
-    text-decoration: underline;
+  @keyframes underline {
+    0% {width:0%}
+    100% {width:100%}
   }
+  
+  .header__nav__logo {
+    margin-right: auto;
+  }
+  /* Header ends */
   
   /* Main Content */
   .main {
@@ -172,4 +172,30 @@
       gap: 10px;
     }
   }
+  @media screen and (max-width: 600px) {
+    .header__nav {
+      flex-direction: column;
+    }
   
+    .header__nav__list {
+      padding: 0;
+      margin: 10px auto;
+    }
+  
+    .header__nav__logo {
+      margin: 0 auto;
+    }
+    
+    .main__section {
+      height: 400px;
+    }
+  
+    .main__sectionDancing {
+      font-size: 40px;
+    }
+  
+    .main__container {
+      padding: 30px 60px;
+      margin: 20px auto
+    }
+  }
