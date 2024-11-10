@@ -1,4 +1,4 @@
-body {
+.page {
   background-image: url(Images/sam-farallon-2e6HKgBdfmc-unsplash.jpg);
   background-size: cover;
   margin: 0;
@@ -9,10 +9,63 @@ body {
   min-height: 100vh;
 }
 
-header {
+/* Header starts */
+.header {
   background-color: #070A2D;
-  padding: 48px 0;
+  padding: 20px 0;
 }
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header__nav__list {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+.header__nav__list li {
+  padding: 0 20px;
+  align-content: center;
+}
+
+.header__nav__link {
+  text-decoration: none;
+  color: white;
+  font-size: 18px;
+  position: relative;
+}
+ 
+.header__nav__link::after {
+  content: "";
+  position: absolute;
+  height: 1px;
+  left: 0;
+  bottom: -3px;
+  width: 0;
+  background-color: white;
+  animation-fill-mode: backwards;
+}
+
+.header__nav__link:hover::after {
+  animation: underline 0.5s forwards;
+}
+
+@keyframes underline {
+  0% {width:0%}
+  100% {width:100%}
+}
+
+.header__nav__logo {
+  margin-right: auto;
+}
+/* Header ends */
+
 
 .main__section {
   height: 480px;
@@ -110,7 +163,7 @@ transform: translateY(-2px);
 }
 
 footer {
-  height: 120px;
+  height: 80px;
   color: white;
   background-color: #070A2D;
   text-align: center;
@@ -118,6 +171,19 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+  .header__nav {
+    flex-direction: column;
+  }
+
+  .header__nav__list {
+    padding: 0;
+    margin: 10px auto;
+  }
+
+  .header__nav__logo {
+    margin: 0 auto;
+  }
+  
   .main__section {
     height: 400px;
   }
