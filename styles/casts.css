@@ -2,10 +2,10 @@ body {
     background-color:#ECEBEC ;
     color:#070A2D;
     font-family: arial;
-
+    margin: 0;
 }
 
-.logo_nav {
+/* .logo_nav {
     width:210px; 
     height:90px; 
     background-color: #430992;
@@ -18,7 +18,7 @@ body {
 
 .nav_container {
     background-color: #ECEBEC;
-}
+} */
 
 .video_w_h { 
     width:750px; 
