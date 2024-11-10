@@ -25,7 +25,7 @@
   }
   
   header h1 {
-    background-color: #663399;
+    background-color: #430992;
     color: white;
     padding: 10px;
     font-size: 2.5rem;
@@ -36,6 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    font-family: Arial, sans-serif;
   }
   
   nav ul {
@@ -56,7 +57,7 @@
     color: white;
   }
   nav ul li a {
-    color: #663399;
+    color: #430992;
     text-decoration: none;
     padding: 10px;
     transition: color 0.3s ease; /* Transition added */
@@ -64,7 +65,7 @@
   
   nav ul li a:hover {
     text-decoration: underline;
-    color: #444; /* Slight color change on hover for effect */
+    color: #CC30D9; /* Slight color change on hover for effect */
   }
   
   nav ul li a:hover {
@@ -108,7 +109,7 @@
   .main-content__text,
   .main-content__list-item {
     background-color: white;
-    color: #663399;
+    color: #430992;
     margin-bottom: 20px;
     padding-bottom: 10px;
     width: 100%;
@@ -117,7 +118,7 @@
   .content-item__text {
     font-size: 1rem;
     line-height: 1.6;
-    background-color: #663399;
+    background-color: #430992;
     color: white;
     text-align: center;
     padding: auto;
@@ -125,7 +126,7 @@
   
   h2 {
     font-size: 2rem;
-    color: #663399;
+    color: #430992;
     margin-bottom: 20px;
     padding-bottom: 10px;
     background-color: white;
@@ -134,7 +135,7 @@
   .content-item__text {
     font-size: 1rem;
     line-height: 1.6;
-    background-color: #663399;
+    background-color: #430992;
     color: white;
     text-align: center;
     padding: auto;
@@ -156,7 +157,7 @@
   footer {
     text-align: center;
     padding: 10px 0;
-    background-color: #663399;
+    background-color: #430992;
     color: white;
     margin-top: 40px;
   }
