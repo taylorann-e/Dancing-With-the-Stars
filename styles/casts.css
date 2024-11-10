@@ -1,89 +1,31 @@
-.header {
-    background-color: #070A2D;
-    padding: 20px 0;
-  }
-  
-  .header__nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1000px;
-    margin: 0 auto;
-   
-  }
-  
-  .header__nav__list {
-    display: flex;
-    justify-content: flex-end;
-    list-style: none;
-  }
-  
-  .header__nav__list li {
-    padding: 0 20px;
-    align-content: center;
-  }
-  
-  .header__nav__link {
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-    position: relative;
-  }
-   
-  .header__nav__link::after {
-    content: "";
-    position: absolute;
-    height: 1px;
-    left: 0;
-    bottom: -3px;
-    width: 0;
-    background-color: white;
-    animation-fill-mode: backwards;
-  }
-  
-  .header__nav__link:hover::after {
-    animation: underline 0.5s forwards;
-  }
-  
-  @keyframes underline {
-    0% {width:0%}
-    100% {width:100%}
-  }
-  
-  .header__nav__logo {
-    margin-right: auto;
-  }
-  /* Header ends */
-  
-  
-  .header_container {
-      display:grid;
-      grid-template-columns: auto auto;
-      justify-items: center;
-      vertical-align: middle;
-      padding-top: 2%;
-  }
-  
-  body {
-      background-color:#ECEBEC ;
-      color:#070A2D;
-      font-family: arial;
-    background-image : url('https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQQ2GRfohmrAaZIZHcfuDWc0NIc0CuDi1jffGr8kUul3AZRs-w--xIXorU&s.png');
-  }
-  
-  .header_video {
-      background-color:#430992;
-      color:#ECEBEC; 
-      
-  }
+.header_container {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-items: center;
+    vertical-align: middle;
+    padding-top: 2%;
+}
 
-.video_w_h { 
-    width:750px; 
-    height:515px;
+body {
+    background-color: #ecebec;
+    color: #070a2d;
+    font-family: arial;
+    background-image: url("https://encrypted-tbn0.gstatic.com/imagesq=tbn:ANd9GcQQ2GRfohmrAaZIZHcfuDWc0NIc0CuDi1jffGr8kUul3AZRs-w--xIXorU&s.png");
+    margin: 0;
+}
+
+.header_video {
+    background-color: #430992;
+    color: #ecebec;
+}
+
+.video_w_h {
+    width: 750px;
+    height: 515px;
 }
 
 .header_container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     justify-items: center;
     vertical-align: middle;
@@ -93,7 +35,6 @@
     line-height: 500px;
     font-size: 40px;
     text-transform: uppercase;
-   
 }
 
 .img {
@@ -101,7 +42,7 @@
 }
 
 .img_stars_container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
     padding-top: 5%;
@@ -111,11 +52,10 @@
     font-size: 40px;
     text-transform: uppercase;
     color: #430992;
-    
 }
 
 .img_Pros_container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
     padding-top: 5%;
@@ -129,7 +69,7 @@
 }
 
 .img_Judges_container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto auto;
     justify-items: center;
 }
@@ -142,7 +82,7 @@
 }
 
 .img_Hosts_container {
-    display:grid;
+    display: grid;
     grid-template-columns: auto auto;
     justify-items: center;
 }
@@ -155,20 +95,18 @@
     color: #430992;
 }
 
-h3 { 
+h3 {
     text-align: center;
     padding-bottom: 20%;
     font-size: 20px;
 }
 
-
 div > img {
-    width:300px;
-    height:300px;
+    width: 300px;
+    height: 300px;
     border-radius: 5px;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
 }
-
 
 .logo_img {
     align-items: center;
@@ -177,58 +115,53 @@ div > img {
 footer {
     height: 80px;
     color: white;
-    background-color: #070A2D;
+    background-color: #070a2d;
     text-align: center;
     align-content: center;
-  }
+}
 
-@media screen and (max-width:600px) {
+@media screen and (max-width: 600px) {
     .logo_nav {
-        width:210px; 
-        height:90px; 
+        width: 210px;
+        height: 90px;
         background-color: #430992;
     }
 
     .header__nav {
         flex-direction: column;
-      }
-    
-      .header__nav__list {
+    }
+
+    .header__nav__list {
         padding: 0;
         margin: 10px auto;
-      }
-    
-      .header__nav__logo {
+    }
+
+    .header__nav__logo {
         margin: 0 auto;
-      }
+    }
 
-
-
-    .video_w_h { 
-        width:550px; 
-        height:450px;
+    .video_w_h {
+        width: 550px;
+        height: 450px;
         padding-bottom: 5%;
     }
-    
-    
+
     .text_header {
         font-size: 35px;
         text-transform: uppercase;
-       
     }
-    
+
     .img {
         display: grid;
     }
-    
+
     .img_stars_container {
-        display:grid;
+        display: grid;
         grid-template-columns: auto;
         justify-items: center;
-        
     }
     .header_container {
-        display:grid;
+        display: grid;
         grid-template-columns: auto;
         justify-items: center;
     }
@@ -238,9 +171,9 @@ footer {
         text-transform: uppercase;
         color: #430992;
     }
- 
+
     .img_Pros_container {
-        display:grid;
+        display: grid;
         grid-template-columns: auto;
         justify-items: center;
     }
@@ -249,9 +182,9 @@ footer {
         text-transform: uppercase;
         color: #430992;
     }
-    
+
     .img_Judges_container {
-        display:grid;
+        display: grid;
         grid-template-columns: auto;
         justify-items: center;
     }
@@ -262,13 +195,13 @@ footer {
         text-transform: uppercase;
         color: #430992;
     }
-    
+
     .img_Hosts_container {
-        display:grid;
+        display: grid;
         grid-template-columns: auto;
         justify-items: center;
     }
-    
+
     .text_Hosts {
         text-align: center;
         padding-bottom: 20%;
@@ -278,23 +211,19 @@ footer {
         color: #430992;
     }
 
-    h3 { 
+    h3 {
         text-align: center;
         font-size: 20px;
     }
-    
-    
+
     div > img {
-        width:350px;
-        height:350px;
+        width: 350px;
+        height: 350px;
         border-radius: 5px;
-        box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+        box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
     }
-    
+
     .logo_img {
         align-items: center;
     }
-
-
 }
-
